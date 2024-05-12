@@ -14,11 +14,11 @@ class DatabaseClass {
 
 }
 
-class TopicTable extends BaseManager {}
+class TopicTable with BaseManager {}
 
-class ReplyTable extends BaseManager {}
+class ReplyTable with BaseManager {}
 
-abstract class BaseManager {
+mixin BaseManager {
 
   AppwriteMetaBase? get meta => null;
 
